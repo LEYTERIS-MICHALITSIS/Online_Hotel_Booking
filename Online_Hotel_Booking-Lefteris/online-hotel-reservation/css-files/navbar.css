@@ -1,0 +1,127 @@
+body{
+    height: 1000px;
+}
+
+.menu{
+    background-color: rgb(9, 62, 132);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(44, 25, 153);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-bar{
+    color: rgb(202, 137, 52);
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu-logo{
+    color: rgb(234, 220, 220);
+    font-size: 45px;
+    border-style: solid;
+    border-radius: 45px;
+    border-color: rgb(202, 137, 52);
+    border-width: 6px;
+    width: 55px;
+    padding-left: 9px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: opacity 0.4s;
+    transition: font-size 0.4s;
+    transition: padding 0.4s;
+    transition: border-style 0.4s;
+    transition: border-width 0.4s;
+    cursor: pointer;
+}
+
+.menu-logo:hover{
+    font-size: 50px;
+    opacity: 0.6;
+    border-style: dotted;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-width: 4px;
+}
+
+.book-button{
+    background-color: rgb(202, 137, 52);
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: padding 0.4s;
+    position: relative;
+}
+
+.book-button:hover{
+    background-color: lightgray;
+    color: rgb(202, 137, 52);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.p1{
+    position: relative;
+    margin-top: 150px;
+}
+
+.book-language{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+.img1{
+    width: 100%;
+}
+
+.eng{
+    border-radius: 2px;
+    border-style: solid;
+    cursor: pointer;
+    transition: opacity 0.2;
+}
+
+.gr{
+    border-radius: 2px;
+    border-style: solid;
+    cursor: pointer;
+    transition: opacity 0.2;
+}
+
+.eng:hover{
+    opacity: 0.6;
+}
+
+.gr:hover{
+    opacity: 0.6;
+}
+
+.eng:focus{
+    background-color: rgb(146, 28, 28);
+}
+
+.gr:focus{
+    background-color: rgb(146, 28, 28);
+}
