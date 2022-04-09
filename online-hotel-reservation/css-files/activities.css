@@ -1,0 +1,59 @@
+.activities-title{
+    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    letter-spacing: 5px;
+    color: rgb(18, 16, 16);
+}
+
+.activities hr{
+    color: rgb(166, 116, 50);
+    height: 2px;
+    width: 400px;
+    background-color: rgb(166, 116, 50);
+}
+
+.tennis, .golf, .scuba{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.tennis-image, .scuba-image, .golf-image{
+    width: 600px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tennis-title, .scuba-title, .golf-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center; 
+    border-top: 2px solid rgb(167, 114, 45);   
+}
+
+.tennis-descr, .scuba-descr, .golf-descr{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(167, 114, 45);   
+}
+
+.golf-info{
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+.tennis-info{
+    padding-right: 20px;
+    padding-top: 100px;
+}
+
+.scuba-info{
+    padding-left: 20px;
+    padding-top: 100px;
+}

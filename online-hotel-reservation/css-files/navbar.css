@@ -1,12 +1,8 @@
-body{
-    height: 1000px;
-}
-
 .menu{
-    background-color: rgb(9, 62, 132);
+    background-color: rgb(6, 6, 93);
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(44, 25, 153);
+    border-bottom: 2px solid black;
     position: fixed;
     top: 0;
     right: 0;
@@ -22,6 +18,21 @@ body{
     cursor: pointer;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.name-logo{
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.hotel-name{
+    font-size: 45px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 5px;
 }
 
 .menu-logo{
@@ -79,21 +90,19 @@ body{
     padding-bottom: 14px;
 }
 
-.p1{
-    position: relative;
-    margin-top: 150px;
-}
-
 .book-language{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 2px;
     margin-top: 15px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .img1{
     width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .eng{
