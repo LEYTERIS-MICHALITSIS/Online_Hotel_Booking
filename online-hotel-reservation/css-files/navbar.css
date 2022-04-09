@@ -3,10 +3,10 @@ body{
 }
 
 .menu{
-    background-color: rgb(6, 6, 93);
+    background-color: rgb(9, 62, 132);
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(44, 25, 153);
     position: fixed;
     top: 0;
     right: 0;
