@@ -1,5 +1,6 @@
 .menu{
-    background-color: rgb(6, 6, 93);
+    /*background-color: rgb(6, 6, 93);*/
+    background-color: rgb(14, 65, 81);
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
