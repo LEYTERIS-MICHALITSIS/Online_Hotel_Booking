@@ -1,0 +1,115 @@
+.header{
+    height: 800px;
+    background-image: url(../images/hotel-reception.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+    color: rgb(245, 199, 72);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    opacity: 95%;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.head-bottom{
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+.head-bottom h2{
+    padding: 22px 0;
+    font-size: 55px;
+    border-bottom: 2px solid rgb(223, 182, 59);
+}
+.head-bottom p{
+    color: aliceblue;
+    opacity: 0.7;
+    font-size: 30px;
+    margin: 25px auto;
+    width: 60vw;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.services{
+    margin: 40px 0;
+    
+}
+.service{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: rgb(20, 17, 17);
+}
+.service-text{
+    padding: 50px 100px;
+    font-size: 20px;
+}
+.service-text h3{
+    font-size: 50px;
+}
+
+
+.service-image{
+    overflow: hidden;
+}
+.service-image img{
+    transition: var(--transition);
+    transition-duration: 1s;
+    width: 600px;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+.service-image:hover img{
+    transform: scale(1.1);
+    
+}
+@media (min-width: 900px){
+    .services-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370px){
+    .services-container{
+        flex-direction: column;
+    }
+    .service{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .service-image{
+        flex: 1;
+    }
+    .service-image img{
+        height: 100%;
+    }
+    .service-text{
+        flex: 1;
+    }
+    .service:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}

@@ -8,6 +8,7 @@
     left: 0;
     width: 100%;
     background-image: url("infobar.jpg");
+    background-color: rgb(24, 31, 35);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +21,7 @@
 .img2{
     width:100%;
     height: 300px;
-    opacity: 0.5;
+    opacity: 0;
     filter: grayscale(10%);
     box-sizing: border-box;
     border: 0cm;
@@ -29,13 +30,13 @@
 
 .contact{
     position:absolute;
-    bottom: 2px;
+    bottom: 28px;
     margin-right:80%;
-    font-size: 12px;
+    font-size: 17px;
     font-family: 'Noto Sans Display', sans-serif;
     color: rgb(255, 225, 165);
     font-weight:545;
-    line-height: 1.6;
+    line-height: 2.2;
 
 }
 
@@ -50,11 +51,11 @@
 .follow{
     position: absolute;
     font-family: 'Noto Sans Display', sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 550;
     line-height: 2;
-    bottom: 2px;
-    color: rgb(75, 72, 72);
+    bottom: 5px;
+    color: rgb(181, 181, 181);
 }
 .policies{
     position: absolute;
@@ -62,9 +63,9 @@
     font-size: 12px;
     font-weight: 545;
     line-height: 1.8;
-    bottom: 2px;
+    bottom: 28px;
     margin-left: 80%;
-    color: rgb(75, 72, 72);
+    color: rgb(131, 127, 127);
     background-color: transparent;
 }
 

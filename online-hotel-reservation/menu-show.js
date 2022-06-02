@@ -12,11 +12,11 @@ function openGallery(){
 }
 
 function openRooms(){
-    //window.location.href = "";
+    window.location.href = "rooms.html";
 }
 
 function openServices(){
-    //window.location.href = "";
+    window.location.href = "services.html";
 }
 
 function openActivities(){
@@ -24,5 +24,5 @@ function openActivities(){
 }
 
 function openInfo(){
-    //window.location.href = "";
+    window.location.href = "info.html";
 }
