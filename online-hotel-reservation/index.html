@@ -13,23 +13,48 @@
     <link rel="stylesheet" href="css-files/activities.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css-files/infobar.css">
+    <link rel="stylesheet" href="css-files/menu-click.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(231, 218, 218);">
+    
     <div class="menu">
+        <div class="menu-button">
+            <span class="fas fa-bars"></span>
+        </div>
         <div class="menu-bar">
-            <i class="fa-solid fa-bars"></i>
+            <ul class="links">
+                <li>
+                    <a href="#" onclick="openHomePage()">Home</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openRooms()">Rooms</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openServices()">Services</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openActivities()">Activities</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openGallery()">Gallery</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openInfo()">Info</a>
+                </li>
+            </ul>
         </div>
         <div class="name-logo">
             <div class="hotel-name">
                 HOTEL
             </div>
-            <div class="menu-logo">
+            <div class="menu-logo" onclick="openHomePage()">
                 <i class="fa-solid fa-sailboat"></i>
             </div>
         </div>
         <div class="book-language">
             <div>
-                <button  class="eng">
+                <button class="eng">
                     <strong>EN</strong>
                 </button>
             </div>
@@ -46,9 +71,7 @@
             
         </div>
     </div>
-    <img class="img1" src="images/palm-trees.jpg">
-    <br>
-    <br>
+    <div class="img-background"></div>
     <div class="gallery">
         <div class="gallery-background">
             <img class="gallery-background-image" src="images/gallery-background.jpg">
@@ -77,6 +100,7 @@
             <div class="golf-info">
                 <div class="golf-title">Golf</div>
                 <div class="golf-descr">Enjoy a game of golf with your friends.We provide all the necessary equipment.</div>
+                <button class="golf-more">Discover More ></button>
             </div>
         </div>
         <div class="tennis">
@@ -85,6 +109,7 @@
                 <div class="tennis-descr">
                     Play a game of tennis and enjoy yourself.
                 </div>
+                <button class="tennis-more">Discover More ></button>
             </div>
             <div>
                 <img class="tennis-image" src="images/tennis.jpg">
@@ -101,13 +126,11 @@
                     of professionals.No matter if you are beginner or experienced we have suitable programs 
                     for you.
                 </div>
+                <button class="scuba-more">Discover More ></button>
             </div>
         </div>
-
     </div>
-
     <div class = "infobar">
-        
         <img class="img2" src="images/infobar.jpg">
         <div class="name">
             <strong>The Hotel</strong>
@@ -142,8 +165,7 @@
                 </li>
             </ul>
         </div>
-
     </div>
-
+    <script src="menu-show.js"></script>
 </body>
 </html>

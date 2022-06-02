@@ -1,31 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .menu{
-    /*background-color: rgb(6, 6, 93);*/
     background-color: rgb(14, 65, 81);
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
     border-bottom: 2px solid black;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    flex-direction: row;
-    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
     z-index: 100;
 }
 
-.menu-bar{
-    color: rgb(202, 137, 52);
-    font-size: 30px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 20px;
+@media screen and (max-width: 650px) {
+    .hotel-name {
+      display: none;
+    }
 }
 
 .name-logo{
     display: grid;
     column-gap: 5px;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    margin-left: 240px;
 }
 
 .hotel-name{
@@ -99,9 +102,9 @@
     margin-right: 20px;
 }
 
-.img1{
-    width: 100%;
+.img-background{
     height: 800px;
+    background-image: url(../images/palm-trees.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }

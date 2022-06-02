@@ -1,3 +1,7 @@
+.gallery{
+    margin-top: 10px;
+}
+
 .gallery-background{
     position: relative;
     text-align: center;
@@ -5,11 +9,13 @@
 }
 
 .gallery-background-image{
+    position: relative;
     width: 100%;
     height: 100px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .gallery-title{
@@ -21,6 +27,7 @@
     letter-spacing: 15px;
     color: rgb(255, 255, 255);
     transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .gallery-info{

@@ -1,0 +1,77 @@
+.title-gallery{
+    font-size: 45px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
+    font-style: oblique;
+    color: rgb(40, 37, 37);
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.gallery-images{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    z-index: -2;
+}
+
+.gallery-images img{
+    width: 220px;
+    height: 200px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(40%);
+    transition: 0.4s;
+    border: 6px solid rgb(206, 166, 115);
+}
+
+.gallery-images img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.selected-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+}
+
+.selected-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(206, 166, 115);
+    cursor: pointer;
+    z-index: 101;
+}
+
+.selected-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(206, 166, 115);
+    width: 500px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 700px){
+    .selected-image img{
+        width: 70%;
+    }
+}
