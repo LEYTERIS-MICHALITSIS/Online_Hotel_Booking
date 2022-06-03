@@ -1,0 +1,62 @@
+.activities-container img{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.activities-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    text-shadow: 2px 2px rgb(19, 19, 19);
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.golf-container, .tennis-container, .scuba-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.golf-title, .tennis-title, .scuba-title{
+    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(166, 116, 50);
+}
+
+.golf-image img, .tennis-image img, .scuba-image img{
+    width: 400px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.golf-text, .tennis-text, .scuba-text{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.golf-info, .tennis-info, .scuba-info{
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 800px){
+    .golf-image img, .tennis-image img, .scuba-image img{
+        width: 200px;
+    }
+}

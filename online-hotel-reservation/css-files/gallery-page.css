@@ -2,7 +2,8 @@
     font-size: 45px;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 700;
-    font-style: oblique;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
     color: rgb(40, 37, 37);
     margin-top: 100px;
     text-align: center;
