@@ -1,0 +1,83 @@
+.imagecontact{
+    
+    display: flex;
+    box-sizing: border-box;
+    background-size: cover;
+    
+}
+
+.contact2{
+    display: flex;
+    position : relative;
+    flex-direction: column;
+    top: 0%;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    
+    background-image: url("contact1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    justify-content:flex-start;
+    align-items: center;
+
+    
+}
+
+.contact_us{
+    position: absolute;
+    align-self: center;
+    top: 250px;
+    color: rgb(209, 157, 27);
+    font-size: 60px;
+}
+.send-mail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    margin-top: 1%;
+    justify-content: space-around;
+    font-size: larger;
+    
+    
+    
+
+}
+fieldset{
+    display: block;
+    position: relative;
+    align-items: flex-start;
+
+}
+fieldset label {
+    display: flex;
+    align-items: center;
+    
+  
+
+}
+fieldset legend{
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    background   : rgba(62, 62, 62, 0.1);
+    border-radius: 5px;
+    
+  }
+
+
+
+
+
+
+
+
+
+

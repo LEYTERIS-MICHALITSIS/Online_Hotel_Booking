@@ -74,6 +74,8 @@ html{
     height: 40px;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
     
     
 }
@@ -85,6 +87,7 @@ html{
     .services-container{
         display: flex;
         flex-wrap: wrap;
+        flex-shrink: 1;
     }
     .service{
         flex: 0 0 calc(50% - 20px);
