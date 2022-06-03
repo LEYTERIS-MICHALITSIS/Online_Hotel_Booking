@@ -26,3 +26,7 @@ function openActivities(){
 function openInfo(){
     window.location.href = "info.html";
 }
+
+function openBooking(){
+    window.location.href = "booking.html";
+}
