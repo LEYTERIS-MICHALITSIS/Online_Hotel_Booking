@@ -113,17 +113,19 @@ body{
 }
 
 .eng{
-    border-radius: 2px;
-    border-style: solid;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
     transition: opacity 0.2;
+    box-shadow: 2px 2px black;
 }
 
 .gr{
-    border-radius: 2px;
-    border-style: solid;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
     transition: opacity 0.2;
+    box-shadow: 2px 2px black;
 }
 
 .eng:hover{
@@ -135,9 +137,9 @@ body{
 }
 
 .eng:focus{
-    background-color: rgb(146, 28, 28);
+    background-color: rgb(91, 71, 71);
 }
 
 .gr:focus{
-    background-color: rgb(146, 28, 28);
+    background-color: rgb(91, 71, 71);
 }
