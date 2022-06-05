@@ -9,41 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css-files/navbar.css">
-
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css-files/infobar.css">
     <link rel="stylesheet" href="css-files/menu-click.css">
+    <link rel="stylesheet" href="css-files/booking.css">
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
 </head>
 <body style="background-color: rgb(231, 218, 218);">
     
-    <div class="menu">
-        <div class="menu-button">
-            <span class="fas fa-bars"></span>
-        </div>
-        <div class="menu-bar">
-            <ul class="links">
-                <li>
-                    <a href="#" onclick="openHomePage()">Home</a>
-                </li>
-                <li>
-                    <a href="#" onclick="openRooms()">Rooms</a>
-                </li>
-                <li>
-                    <a href="#" onclick="openServices()">Services</a>
-                </li>
-                <li>
-                    <a href="#" onclick="openActivities()">Activities</a>
-                </li>
-                <li>
-                    <a href="#" onclick="openGallery()">Gallery</a>
-                </li>
-                <li>
-                    <a href="#" onclick="openInfo()">Info</a>
-                </li>
-            </ul>
-        </div>
-        <div class="name-logo">
+    <div class="menu" style="background-color:rgb(52, 56, 70) ;">
+      
+        <div class="name-logo" >
             <div class="hotel-name">
                 The Hotel
             </div>
@@ -51,25 +29,180 @@
                 <i class="fa-solid fa-sailboat"></i>
             </div>
         </div>
-        <div class="book-language">
-            <div>
-                <button class="eng">
-                    <strong>EN</strong>
-                </button>
+       
+    </div>
+
+
+    <div class = "bookingcontainer">
+        <div class="progress-bookingcontainer">
+            <hr class="progress-bar-back">
+            
+            <hr class="progress-bar-front">
+
+            <div class="step checked">
+                <i class="fa-solid fa-calendar-days"></i>
+                
             </div>
-            <div>
-                <button class="gr">
-                    <strong>GR</strong>
-                </button>
+            <div class="step">
+                <i class="fa-solid fa-bed"></i>
             </div>
-            <div>
-                <button class="book-button">
-                    <strong>BOOK</strong>
-                </button>
+            <div class="step">
+                <i class="fa-solid fa-id-badge"></i>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+
+        </div>
+        <button class="btn" id="prev" disabled><i class="fas fa-arrow-left">
+        </i></button>
+        <button class="btn" id="next"><i class="fas fa-arrow-right">
+        </i></button>
+
+    </div>
+
+    <div class="booking">
+        <div class="bookingDate live">
+            <div class="datebox">
+                <span>Ημέρα Άφιξης</span>
+                <input type="date" placeholder="09/06/2022">
+            </div>
+            <div class="datebox">
+                <span>Ημέρα Αναχώρησης</span>
+                <input type="date" placeholder="09/06/2022">
+            </div>
+            <div class="datebox">
+                <span>Ενήλικες</span>
+                <input type="number" placeholder="0" min="0" max="5">
+            </div>
+            <div class="datebox">
+                <span>Παιδιά</span>
+                <input type="number" placeholder="0" min="0" max="5">
+            </div>
+            <div class="dateboxbutton">
+                <button class="flex1" id="flex1">
+                    <span>Αναζήτηση Διαθεσιμότητας</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+            </div>
+
+        </div>
+        <div class="bookingRooms">
+            <div class="roomStyle">
+                <img class = "roomimages" src="images/onebedroom2.jpg">
+                <div class = "booking-room-descr">
+                    <h2>Μονόκλινο</h2>
+                    <p>άτομα 2 | 1 King | Non Smoking Room</p>
+                    <p>25-32 Sqm - Sea View - Free Wireless High Speed Internet - Air Conditioning - Satellite TV - Designer Brand Bath Amenities - 
+                    Bathrobe and Slippers - Direct Dial Phone - Daily Maid Service - Safe - Hairdryer  </p>
+                    <h3><strong>70€ </strong><small>την βραδιά</small></h3>
+                    <input type="number" placeholder="0" min="0" max="5">
+                </div>
+            </div>
+            <div class="roomStyle">
+                <img class = "roomimages" src="images/Two-Double-Bed-Rooms-1.jpg">
+                <div class = "booking-room-descr">
+                    <h2>Δίκλινο</h2>
+                    <p>άτομα 3 | 2 King 1 Queen | Non Smoking Room</p>
+                    <p>30-35 Sqm - Sea View - Free Wireless High Speed Internet - Air Conditioning - Satellite TV - Designer Brand Bath Amenities - 
+                    Bathrobe and Slippers - Direct Dial Phone - Daily Maid Service - Safe - Hairdryer  </p>
+                    <h3><strong>90€ </strong><small>την βραδιά</small></h3>
+                    <input type="number" placeholder="0" min="0" max="5">
+                </div>
+            </div>
+            <div class="roomStyle">
+                <img class = "roomimages" src="images/threebed.jpg">
+                <div class = "booking-room-descr">
+                    <h2>Τρίκλινο</h2>
+                    <p>άτομα 4 | 3 King 1 Queen | Non Smoking Room</p>
+                    <p>35-38 Sqm - Sea View - Free Wireless High Speed Internet - Air Conditioning - Satellite TV - Designer Brand Bath Amenities - 
+                    Bathrobe and Slippers - Direct Dial Phone - Daily Maid Service - Safe - Hairdryer  </p>
+                    <h3><strong>120€ </strong><small>την βραδιά</small></h3>
+                    <input type="number" placeholder="0" min="0" max="5">
+                </div>
+            </div>
+            <div class="roomStyle">
+                <img class = "roomimages" src="images/suite.jpg">
+                <div class = "booking-room-descr">
+                    <h2>Suite</h2>
+                    <p>άτομα 2 | 1 King | Non Smoking Room</p>
+                    <p>40-50 Sqm - Sea View - Free Wireless High Speed Internet - Air Conditioning - Satellite TV - Designer Brand Bath Amenities - 
+                    Bathrobe and Slippers - Direct Dial Phone - Daily Maid Service - Safe - Hairdryer  </p>
+                    <h3><strong>200€ </strong><small>την βραδιά</small></h3>
+                    <input type="number" placeholder="0" min="0" max="5">
+                </div>
             </div>
             
         </div>
+
+        <div class="persondetails" style="display: none;" >
+            <form class="persondetails-form" id="persondetails-form">
+                <div class="form-control">
+                    <label for="firstname">Όνομα</label>
+                    <input type="text" placeholder="Type here" id="firstname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="sirname">Επίθετο</label>
+                    <input type="text" placeholder="Type here" id="sirname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="mail">Email</label>
+                    <input type="text" placeholder="name@gmail.com" id="mail" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Τηλέφωνο</label>
+                    <input type="text" placeholder="+30" id="phone" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="country">Χώρα</label>
+                    <input type="text" placeholder="Ελλάδα" id="country" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="town">Πόλη</label>
+                    <input type="text" placeholder="Πάτρα" id="town" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="address">Διεύθυνση</label>
+                    <input type="text" placeholder="Type here" id="address" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="tk">ΤΚ</label>
+                    <input type="text" placeholder="Type here" id="tk" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button class="btn2" type="button" id="confirminfo">Συνέχεια</button>
+            </form>
+        </div>
+        <div class="checkoutinfo">
+
+        </div>
+
     </div>
+
     
     
     
@@ -110,5 +243,6 @@
         </div>
     </div>
     <script src="menu-show.js"></script>
+    <script src="booking.js"></script>
 </body>
 </html>

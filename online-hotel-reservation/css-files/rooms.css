@@ -1,7 +1,31 @@
 .allrooms{
     display: flex;
+    position: relative;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+.allroomsimg{
+    background-image: url(../images/onebedroom2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    .allroomsimg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
 
