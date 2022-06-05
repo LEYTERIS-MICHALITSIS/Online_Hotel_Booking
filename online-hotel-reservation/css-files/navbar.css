@@ -106,8 +106,9 @@ body{
 
 .img-background{
     height: 800px;
-    background-image: url(../images/palm-trees.jpg);
-    background-size: cover;
+    background-image: url(../images/hotelview.jpg);
+    
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
