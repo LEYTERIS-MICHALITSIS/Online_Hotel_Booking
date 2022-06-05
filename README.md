@@ -1,2 +1,13 @@
-# Online_Hotel_Booking
-This project is about creating a website that people can book rooms in a certain hotel
+# Online_Hotel_Booking Ομάδα 31
+## The Hotel
+Συντάκτες: Λευτέρης Μιχαλίτσης, Παναγιώτης Σφίκτης
+
+Το θέμα της εργασίας είναι μια εφαρμογή online κρατήσεων ξενοδοχείου.
+
+Σε περίπτωση σφάλματος όλος ο κώδικας μαζί με όλα τα υπόλοιπα αρχεία βρίσκονται στον παρακάτω σύνδεσμο
+
+https://github.com/LEYTERIS-MICHALITSIS/Online_Hotel_Booking.git
+
+Για να εξετάσετε την λειτουργία της σελίδας, πατήστε το αρχείο index.html
+ή όποιο άλλο αρχείο html μιας και όλα συνδέονται μεταξύ τους.
+Οι εικόνες και τα css αρχεία βρίσκονται σε αντίστοιχο ξεχωρίστο φάκελο
