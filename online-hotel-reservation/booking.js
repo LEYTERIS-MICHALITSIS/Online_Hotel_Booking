@@ -9,6 +9,7 @@ const bookingDate= document.querySelector(".bookingDate");
 const bookingRooms= document.querySelector(".bookingRooms");
 const persondetails= document.querySelector(".persondetails");
 const checkoutinfo= document.querySelector(".checkoutinfo");
+const checkout= document.querySelector(".checkout");
 
 let currentChecked = 1;
 
@@ -64,10 +65,13 @@ function updateStepProgress(){
         bookingRooms.classList.remove("live");
         persondetails.style.display = "flex";
         checkoutinfo.classList.remove("live");
+        checkout.style.display = "none";
+
     }
     if(currentChecked == 4){
         persondetails.style.display = "none";
         checkoutinfo.style.display ="flex";
+        checkout.style.display = "";
     }
 }
 

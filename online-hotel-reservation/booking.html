@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="css-files/menu-click.css">
     <link rel="stylesheet" href="css-files/booking.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     
@@ -203,119 +202,42 @@
 
 
         <div class="checkoutinfo" style="display: none;" >
-
-            <div>
-                <!--<div class="form-card">
-                    <h2 class="fs-title">Payment Information</h2>
-                    <div class="radio-group">
-                        <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
-                        <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div>
-                        <br>
-                    </div>
-                    <label class="pay">Card Holder Name*</label>
-                    <input type="text" name="holdername" placeholder=""/>
-                    <div class="row">
-                        <div class="col-9">
-                            <label class="pay">Card Number*</label>
-                            <input type="text" name="cardno" placeholder=""/>
-                        </div>
-                        <div class="col-3">
-                            <label class="pay">CVC*</label>
-                            <input type="password" name="cvcpwd" placeholder="***"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="pay">Expiry Date*</label>
-                        </div>
-                        <div class="col-9">
-                            <select class="list-dt" id="month" name="expmonth">
-                                <option selected>Month</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                            <select class="list-dt" id="year" name="expyear">
-                                <option selected>Year</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="page-container">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a class="logo" href="pay.triip.me" title="Triip Pay"></a>
-                                
-                                <h2>
-                                    <div class="label">Payment amount:</div>
-                                    <span class="amount">$500</span>
-                                </h2>
-                                <br/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="card-checkout" id="card-checkout">
-                                    <div class="card-types">
-                                        <div class="card_type fa fa-cc-discover" id="discover"></div>
-                                        <div class="card_type fa fa-cc-amex" id="amex"></div>
-                                        <div class="card_type fa fa-cc-mastercard" id="mastercard"></div>
-                                        <div class="card_type fa fa-cc-visa" id="visa"></div>
-                                    </div>
-                                    <div class="card-options">
-                                        <form class="card-details" id="card-form">
-                                            <div class="form-group">
-                                                <label for="cc-number">Card Number</label>
-                                                <input id="cc-number" name="cc-number" class="cc-number" placeholder="XXXX XXXX XXXX XXXX" data-numeric required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="cc-name">Card Holder</label>
-                                                <input id="cc-name" name="cc-name" class="cc-name" placeholder="Name Surname" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="cc-expiry">Expiry</label>
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <input class="cc-expiry inline" placeholder="MM/YY" required>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <input class="cc-cvc" placeholder="CVC" data-numeric required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-confirm">
-                                        <button id="submit-button" class="button-confirm">
-                                            <i class="fa fa-lock"></i> Submit
-                                        </button>
-                                    </div>
-                                </div>
-                                <div id="loading" class="loading hidden">
-                                    <div class="load-8">
-                            <div class="line"></div>
-                        </div>
-                                </div>
-                                <div id="success" class="success hidden">
-                                    <h4>Payment Succeeded !!</h4>
-                                    <p>Your confirmation code is: <br/><code>AD56346546</code></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class='subject'>The Hotel</br><strong>Credit Card Checkout</strong></div>
+            <div class='checkout'>
+                <div class='order'>
+                  <h2>Checkout</h2>
+                  
+                  <ul class='order-list'>
+                  </ul>
+                  <h5>Έκπτωση</h5><h4>10%</h4>
+                  <h5 class='total'>Total</h5><h1>$ 167.50</h1>
+                </div>
+                <h2>Στοιχεία Πληρωμής</h2>
+                <div id='payment' class='payment'>
+                  
+                  <div class='card-form'>
+                      <p class='field'>
+                      
+                      <input type='text' id='cardnumber' name='cardnumber' placeholder='1234 5678 9123 4567' pattern='\d*' title='Card Number' />
+                      </p>
+                      <p class='field space'>
+                        
+                        <input type='text' id='cardexpiration' name='cardexpiration' placeholder="MM / YYYY" pattern="\d*" title='Card Expiration Date' />
+                      </p>
+                      <p class='field'>
+                        
+                        <input type='text' id='cardcvc' name='cardcvc' placeholder="123" pattern="\d*" title='CVC Code' />
+                      </p>
+                      <button class='button-cta' title='Confirm your purchase'><span>Πληρωμή</span></button>
+                  </div>
+                </div>
+                <div id='paid' class='paid'>
+                  
+                  <h2>Η κράτηση σας ολοκληρώθηκε.</h2>
+                  <h2>Σας ευχαριστούμε!</h2>
+                </div>
               </div>
-                
-            </div>
+              
         </div>
 
     </div>
